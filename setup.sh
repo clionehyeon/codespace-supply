@@ -22,7 +22,7 @@ sudo apt update
 sudo apt -y install vulkan-sdk
 sudo apt -y install vulkan-tools
 sudo apt -y install libvulkan-dev
-sudo apt -y install vulkan-validationlayers-dev spirv-tools
+sudo apt -y install vulkan-validationlayers spirv-tools
 echo "📦 ==> Vulkan SDK 관련 패키지 설치 완료"
 
 echo "📦 ==> GLFW 설치..."
