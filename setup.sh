@@ -20,11 +20,18 @@ wget -qO- https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo tee /etc
 sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-noble.list http://packages.lunarg.com/vulkan/lunarg-vulkan-noble.list
 sudo apt update
 sudo apt -y install vulkan-sdk
+sudo apt -y install vulkan-tools
+sudo apt -y install libvulkan-dev
+sudo apt -y install vulkan-validationlayers-dev spirv-tools
 echo "📦 ==> Vulkan SDK 관련 패키지 설치완료"
 
 echo "📦 ==> GLFW 설치..."
 sudo apt -y install libglfw3 libglfw3-dev
 echo "📦 ==> GLFW 설치완료"
+
+echo "📦 ==> GLM 설치..."
+sudo apt install libglm-dev
+echo "📦 ==> GLM 설치완료"
 
 echo "🔧 Vulkan SDK + GLFW 환경 구축 완료"
 
