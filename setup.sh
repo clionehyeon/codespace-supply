@@ -6,7 +6,7 @@ echo "📦 ==> 시스템 패키지 업데이트..."
 sudo apt update && sudo apt upgrade -y
 
 echo "📦 ==> 필수 개발 도구 설치..."
-sudo apt install -y build-essential cmake git libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libgl1-mesa-dev libxi-dev
+sudo apt install -y build-essential cmake git libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libgl1-mesa-dev libxi-dev libxxf86vm-dev
 sudo apt install -y ninja-build
 sudo apt install -y clang
 echo "📦 ==> 필수 개발 도구 설치완료"
