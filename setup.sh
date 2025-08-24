@@ -2,7 +2,7 @@ set -e
 
 echo "ℹ️ 기본 환경 구축 시작"
 
-echo "==> 시스템 패키지 업데이트..."
+echo "📦 ==> 시스템 패키지 업데이트..."
 sudo apt update && sudo apt upgrade -y
 
 echo "📦 ==> 필수 개발 도구 설치..."
@@ -21,7 +21,7 @@ sudo apt install vulkan-sdk
 echo "📦 ==> Vulkan SDK 관련 패키지 설치완료"
 
 echo "📦 ==> GLFW 설치..."
-sudo apt install libglfw3 libglfw-dev
+sudo apt install libglfw3 libglfw3-dev
 echo "📦 ==> GLFW 설치완료"
 
 echo "🔧 Vulkan SDK + GLFW 환경 구축 완료"
