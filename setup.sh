@@ -9,7 +9,7 @@ echo "📦 ==> 필수 개발 도구 설치..."
 sudo apt install -y build-essential cmake git libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libgl1-mesa-dev libxi-dev libxxf86vm-dev
 sudo apt install -y ninja-build
 sudo apt install -y clang
-echo "📦 ==> 필수 개발 도구 설치완료"
+echo "📦 ==> 필수 개발 도구 설치 완료"
 
 echo "🔧 기본 환경 구축 완료"
 
@@ -23,7 +23,7 @@ sudo apt -y install vulkan-sdk
 sudo apt -y install vulkan-tools
 sudo apt -y install libvulkan-dev
 sudo apt -y install vulkan-validationlayers-dev spirv-tools
-echo "📦 ==> Vulkan SDK 관련 패키지 설치완료"
+echo "📦 ==> Vulkan SDK 관련 패키지 설치 완료"
 
 echo "📦 ==> GLFW 설치..."
 sudo apt -y install libglfw3 libglfw3-dev
@@ -58,7 +58,7 @@ services:
       - 127.0.0.1:5800:5800
 EOF
 docker compose up -d
-echo "📦 ==> noVCN, Xtigervcn 구축 완료"
+echo "📦 ==> noVCN, Xtigervcn 설치 완료"
 
 echo "🔧 VCN 환경 구축 완료"
 
