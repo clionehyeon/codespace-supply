@@ -7,6 +7,8 @@ sudo apt update && sudo apt upgrade -y
 
 echo "📦 ==> 필수 개발 도구 설치..."
 sudo apt install -y build-essential cmake git libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libgl1-mesa-dev libxi-dev
+sudo apt install -y ninja-build
+sudo apt install -y clang
 echo "📦 ==> 필수 개발 도구 설치완료"
 
 echo "🔧 기본 환경 구축 완료"
@@ -17,11 +19,11 @@ echo "📦 ==> Vulkan SDK 관련 패키지 설치..."
 wget -qO- https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo tee /etc/apt/trusted.gpg.d/lunarg.asc
 sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-noble.list http://packages.lunarg.com/vulkan/lunarg-vulkan-noble.list
 sudo apt update
-sudo apt install vulkan-sdk
+sudo apt -y install vulkan-sdk
 echo "📦 ==> Vulkan SDK 관련 패키지 설치완료"
 
 echo "📦 ==> GLFW 설치..."
-sudo apt install libglfw3 libglfw3-dev
+sudo apt -y install libglfw3 libglfw3-dev
 echo "📦 ==> GLFW 설치완료"
 
 echo "🔧 Vulkan SDK + GLFW 환경 구축 완료"
