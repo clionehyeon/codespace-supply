@@ -35,4 +35,4 @@ EOF
 docker compose up -d
 echo "📦 ==> noVCN, Xtigervcn 설치 완료"
 
-echo "✅ Vulkan, GLFW 환경 구축 완료!"
+echo "✅ 기본 환경 구축 완료!"
