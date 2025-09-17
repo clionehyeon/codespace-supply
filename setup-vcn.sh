@@ -22,9 +22,9 @@ services:
     restart: always
     environment:
       VNC_GEOMETRY: 1440x900
-    ports:
-      - 127.0.0.1:5900:5900
-      - 127.0.0.1:6000:6000
+    expose:
+      - 5900
+      - 6000
   novnc:
     image: geek1011/easy-novnc
     restart: always
